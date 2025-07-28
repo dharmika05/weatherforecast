@@ -1,0 +1,114 @@
+body {
+    background-image: url("images/2148933766.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather {
+    text-align: center;
+    font-size: clamp(24px, 6vw, 60px); /* Responsive font size */
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    white-space: nowrap; /* Force single line */
+    overflow: hidden;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.forms {
+    flex: 1 1 auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.forme {
+    flex-shrink: 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+}
+
+.forme:hover {
+    background-color: white;
+    color: black;
+}
+
+.div {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(156, 184, 174);
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fero {
+    color: rgb(216, 89, 89);
+    font-weight: bold;
+}
+
+.paragraph {
+    color: black;
+    font-weight: bold;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 480px) {
+    .weather {
+        font-size: 35px;
+    }
+
+    .forms {
+        font-size: 14px;
+    }
+
+    .forme {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .input-row {
+        flex-wrap: nowrap;
+    }
+}
